@@ -4,11 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "backpack dev",
+    "build": "backpack build",
+    "start": "node ./build/main.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.0"
+    "axios": "^0.21.0",
+    "backpack-core": "^0.8.4",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "knex": "^0.21.12",
+    "memoizee": "^0.4.14",
+    "morgan": "^1.10.0",
+    "pg": "^8.4.2"
   }
 }
