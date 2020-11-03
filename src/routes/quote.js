@@ -1,5 +1,10 @@
-import express    from 'express';
-import controller from '../controllers/quote.js';
+const express    = require('express');
+const controller = require('../controllers/quote.js');
 const quoteHandler = express.Router();
 
-export default quoteHandler;
+quoteHandler.post(
+  '/',
+  controller.quote,
+)
+
+module.exports = quoteHandler;
